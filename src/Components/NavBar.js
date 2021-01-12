@@ -11,9 +11,9 @@ function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
                   <Link className="nav-item nav-link" to="/">Profile</Link>
-                  <Link className="nav-item nav-link" to="/topics">Users</Link>
-                  <Link className="nav-item nav-link" to="/profile">Debate</Link>
-                  <Link className="nav-item nav-link" to="/challenge">Sign In</Link>
+                  <Link className="nav-item nav-link" to="/users">Challengers</Link>
+                  <Link className="nav-item nav-link" to="/debate">Debate</Link>
+                  
 
               </Nav>
 
