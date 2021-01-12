@@ -9,23 +9,26 @@
 </head>
 <body>
   <div class="chat_area">
-    <div class="top_menu">
-        <div class="title">Debate Chat</div>
-    </div>
-    <ul id ="messages" class="messages">
-        
-    </ul>
-     
-    <div class="message_box">
-   <i id="typing"></i>
-    <form id="form">
-        <div class="message_input">
-            <input id="message" class="message_input" placeholder="Type your message here..." />
-        </div>
-        <button class="send_message">Send</button>
-      </form>
-    </div>
+       <ul id ="messages" class="messages">
+      
+    </ul>  
+  </div>
+
+  <div class="top_menu">
+    <div class="title">NowWereTalking</div>
 </div>
+
+  <div class="message_box">
+    <i id="typing"></i>
+    <form id="form">
+      <div class="message_input">
+          <input id="message" class="message_input" placeholder="Type your message here..." />
+      </div>
+      <button class="send_message">Send</button>
+    </form>
+   
+  </div>
+
 
     <script src="/socket.io/socket.io.js"></script>
 <script>
