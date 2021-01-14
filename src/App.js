@@ -10,11 +10,11 @@ import NavBar from './Components/NavBar'
 // pages
 import Profile from './Pages/Profile'
 import Users from './Pages/Users'
-import SignIn from './Pages/SignIn'
-import ProfileMe from './Pages/ProfileMe'
-import Search from './Pages/Search'
+// import SignIn from './Pages/SignIn'
+
+
 import Landing from './Pages/Landing'
-import SignUp from './Pages/SignUp'
+import Debate from "./Pages/Debate";
 
 function App() {
   return (
@@ -25,10 +25,9 @@ function App() {
         
           <Route exact path="/profile/:id" component={Profile} />
           <Route exact path="/users" component={Users} />
-          <Route exact path="/" component={SignIn} />
-          <Route exact path="/search" component={Search} />
+          <Route exact path="/debate" component={Debate}/>   
           <Route exact path="/" component={Landing} />
-          <Route exact path="/signup" component={SignUp} />
+          
         
       
      </div>
