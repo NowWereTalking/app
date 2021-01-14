@@ -18,6 +18,20 @@ input {
   min-height: 100vh;
   overflow: hidden;
 }
+.header{
+/* position: relative; */
+margin-left: 420px;
+}
+.logo{
+  color: orangered;
+  font-size: 28pt;
+  font-weight: bold;
+  position: fixed;
+  top: 20px;
+  margin-left: 20px;
+  font-family:'Courier New', Courier, monospace
+
+}
 
 .forms-container {
   position: absolute;

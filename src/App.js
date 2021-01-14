@@ -9,6 +9,7 @@ import {
 
 
 // components 
+import Header from './Components/Header'
 import NavBar from './Components/NavBar'
 
 // pages
@@ -21,7 +22,7 @@ import SignUp from './Pages/SignUp'
 function App() {
   return (
     <div className="App">
-      <NavBar /> 
+       <Header/>
       <Router>
         <Switch>
           <Route exact path="/profile/me" component={ProfileMe} />
@@ -31,6 +32,7 @@ function App() {
           <Route exact path="/signup" component={SignUp} />
         </Switch>
       </Router>
+      
     </div>
   );
 }

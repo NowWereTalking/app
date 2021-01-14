@@ -1,10 +1,9 @@
-
-
 function NavBar() {
     return (
-      <div className="nav-container">
-          NavBar Goes HEre
-      </div>
+        <div>
+             NavBar
+            </div>
+      
     );
   }
   
