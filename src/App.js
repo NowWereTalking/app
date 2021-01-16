@@ -1,11 +1,7 @@
-import React from "react";
+
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter as Router, Route,} from "react-router-dom";
 
 
 // components 
@@ -13,25 +9,29 @@ import NavBar from './Components/NavBar'
 
 // pages
 import Profile from './Pages/Profile'
-import ProfileMe from './Pages/ProfileMe'
-import Search from './Pages/Search'
+import Users from './Pages/Users'
+// import SignIn from './Pages/SignIn'
+
+
 import Landing from './Pages/Landing'
-import SignUp from './Pages/SignUp'
+import Debate from "./Pages/Debate";
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <NavBar /> 
-      <Router>
-        <Switch>
-          <Route exact path="/profile/me" component={ProfileMe} />
+      
+        
           <Route exact path="/profile/:id" component={Profile} />
-          <Route exact path="/search" component={Search} />
+          <Route exact path="/users" component={Users} />
+          <Route exact path="/debate" component={Debate}/>   
           <Route exact path="/" component={Landing} />
-          <Route exact path="/signup" component={SignUp} />
-        </Switch>
-      </Router>
-    </div>
+          
+        
+      
+     </div>
+    </Router>
   );
 }
 
