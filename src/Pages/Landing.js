@@ -6,10 +6,10 @@ function Landing() {
 
     
   const [loading, setLoading] = useState(false)
-
   const [username, setUsername ] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const [currentPage, setcurrentPage] = useState("")
 
 
 const container = useRef(null)
@@ -35,6 +35,8 @@ const container = useRef(null)
                 <input type="submit" defaultValue="Login" className="btn solid" onClick={ (e) => {
                     e.preventDefault()
                     console.log("this is where we login", username)
+                    setcurrentPage("Profile")
+                    window.location.href="/Profile"
                 
                 }} />
               </form>

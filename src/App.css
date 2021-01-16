@@ -27,9 +27,10 @@ margin-left: 420px;
   font-size: 29pt;
   font-weight: bold;
   position: fixed;
-  top: 20px;
+  top: 25px;
   margin-left: 20px;
-  font-family:'Courier New', Courier, monospace
+  /* font-family:'Courier New', Courier, monospace */
+  font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
