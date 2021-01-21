@@ -23,7 +23,7 @@ function App() {
       <NavBar /> 
         <Switch>
           <Route exact path="/profile/:id" component={Profile} />
-          <Route exact path="/Landing" component={Landing} />
+          <Route exact path="/" component={Landing} />
           <Route exact path="/User" component={User} />
           {/* <Route exact path="/Debate" component={Debate} /> */}
         </Switch>
