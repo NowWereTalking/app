@@ -9,14 +9,11 @@ import {
 
 
 // components 
-import NavBar from './Components/NavBar'
-
-// pages
+import NavBar from './Components/NavBar/NavBar'
 import Profile from './Pages/Profile'
-import ProfileMe from './Pages/ProfileMe'
-import Search from './Pages/Search'
-import SignIn from './Pages/SignIn'
-import SignUp from './Pages/SignUp'
+import Landing from './Pages/Landing'
+import Landing from './Pages/User'
+import Debate from "./Pages/Debate";
 
 function App() {
   return (
@@ -24,11 +21,10 @@ function App() {
       <NavBar /> 
       <Router>
         <Switch>
-          <Route exact path="/profile/me" component={ProfileMe} />
           <Route exact path="/profile/:id" component={Profile} />
-          <Route exact path="/search" component={Search} />
-          <Route exact path="/" component={SignIn} />
-          <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/Landing" component={Landing} />
+          <Route exact path="/User" component={User} />
+          <Route exact path="/Debate" component={Debate} />
         </Switch>
       </Router>
     </div>

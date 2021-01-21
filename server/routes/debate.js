@@ -3,7 +3,7 @@ const app = express()
 const bodyParser = require("body-parser");
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
-const cors = reuire('cors')
+const cors = require('cors')
 
 const { v4: uuidV4 } = require('uuid');
 
