@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(161, 198, 199);
+  font-family: "Calibri", "Roboto", sans-serif;
+}
+
+.chat_area {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+  left: 70%;
+  top: 40%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f8f8f8;
+  overflow: scroll;
+  }
+
+.message_box{
+  position: absolute;
+  left: 55%;
+  top: 68%;
+}
+
+.message_box .message_input{
+  width: 550px;
+  height: 50px;
+}
+.send_message {
+  position: absolute;
+  background-color: #1f97a0;
+  border: darkgray;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  top:120%;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.send_message:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.send_message:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.top_menu .title {
+  text-align: center;
+  color: #1a62a5;
+  font-size: 30px;
+  text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+  position: absolute;
+  left: 65%;
+  top: 15%;
+} */
+
+.messages {
+  position: relative;
+  padding: 20px 10px 0 10px;
+  margin: 0;
+  height: 347px;
+  overflow: scroll;
+}
+.messages .message {
+  clear: both;
+  overflow: scroll;
+  margin-bottom: 20px;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+#video-grid{
+  padding-top: 140px;
+  padding-left: 150px;
+}
+
