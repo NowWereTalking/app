@@ -12,7 +12,7 @@ import {
 import NavBar from './Components/NavBar/NavBar'
 import Profile from './Pages/Profile'
 import Landing from './Pages/Landing'
-import Landing from './Pages/User'
+import User from './Pages/User'
 import Debate from "./Pages/Debate";
 
 function App() {
