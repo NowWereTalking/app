@@ -4,27 +4,28 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  // Link
 } from "react-router-dom";
 
 
 // components 
 import NavBar from './Components/NavBar/NavBar'
-import Profile from './Pages/Profile'
-import Landing from './Pages/Landing'
-import User from './Pages/User'
-import Debate from "./Pages/Debate";
+import Profile from './Pages/Profile/Profile'
+import Landing from './Pages/Landing/Landing'
+import User from './Pages/User/User'
+// import Debate from "./Pages/Debate";
 
 function App() {
   return (
     <div className="App">
-      <NavBar /> 
+      
       <Router>
+      <NavBar /> 
         <Switch>
           <Route exact path="/profile/:id" component={Profile} />
           <Route exact path="/Landing" component={Landing} />
           <Route exact path="/User" component={User} />
-          <Route exact path="/Debate" component={Debate} />
+          {/* <Route exact path="/Debate" component={Debate} /> */}
         </Switch>
       </Router>
     </div>
