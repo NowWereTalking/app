@@ -34,14 +34,6 @@ const UserSchema = new Schema({
     trim: true,
   },
 
-  polFav: {
-    type: String,
-    trim: true,
-  },
-
-  polpref: {
-    type: String,
-  },
 });
 
 const User = mongoose.model('User', UserSchema);

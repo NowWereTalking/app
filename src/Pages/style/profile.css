@@ -83,6 +83,15 @@
     
 }
 
+.form{
+    border: solid gray 2px;
+}
+
+#Name{
+    border: hidden;
+    outline: none;
+}
+
 .input{
     border: hidden;
     outline: none;

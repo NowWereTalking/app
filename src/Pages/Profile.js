@@ -50,7 +50,8 @@ const Profile = () => {
                         id="profileImg"
                     />
 
-                    <div className="nameCont">
+                    <div className="form">
+                    <div>
                     <input
                         id="Name"
                         className="input"
@@ -72,27 +73,6 @@ const Profile = () => {
                     />
                 
                     {' '}
-                    <div>
-                        {' '}
-                        <strong> Political Favorite: </strong>
-                        <input
-                        id="polFav"
-                        className="input"
-                        placeholder=" liberal"
-                        />
-                        {' '}
-                    </div>
-                    {' '}
-                    <div>
-                        {' '}
-                        <strong> Partie Ties: </strong>
-                        <input
-                        id="parTie"
-                        className="input"
-                        placeholder=" democrat"
-                        />
-                        {' '}
-                    </div>
                     <div className="widgets">
                         <div className="location">
                         <svg
@@ -146,6 +126,7 @@ const Profile = () => {
                         placeholder="http://yourfacebooklink.com"
                         />
                         {' '}
+                        </div>
                         </div>
                         {' '}
                     </div>
