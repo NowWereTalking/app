@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  // Link
+  Link
 } from "react-router-dom";
 
 
@@ -13,6 +13,7 @@ import NavBar from './Components/NavBar/NavBar'
 import Profile from './Pages/Profile/Profile'
 import Landing from './Pages/Landing/Landing'
 import User from './Pages/User/User'
+import Header from './Components/Header'
 // import Debate from "./Pages/Debate";
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
     <div className="App">
       
       <Router>
-      <NavBar /> 
+        <Header/>
+      {/* <NavBar />  */}
         <Switch>
           <Route exact path="/profile/:id" component={Profile} />
           <Route exact path="/" component={Landing} />
