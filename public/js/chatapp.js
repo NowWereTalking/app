@@ -1,5 +1,7 @@
 var socket = io();
 var messages = document.getElementById("messages");
+
+
 //sending message to html
 (function() {
   $("form").submit(function(e) {
@@ -32,4 +34,13 @@ messageInput.addEventListener("keypress", () => {
 socket.on("notifyTyping", data => {
   typing.innerText = data.user + " " + data.message;
   console.log(data.user + data.message);
+});
+
+
+messageInput.addEventListener("keyup", () => {
+  socket.emit("stopTyping", "");
+});
+
+socket.on("notifyStopTyping", () => {
+  typing.innerText = "";
 });

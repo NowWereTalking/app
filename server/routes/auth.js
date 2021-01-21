@@ -1,1 +1,0 @@
-// all the routes realted to oauthentication go here

@@ -1,1 +1,0 @@
-// all the routes related to the profile page goes here 
