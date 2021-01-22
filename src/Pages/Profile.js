@@ -4,12 +4,14 @@ import './style/profile.css';
 
 const Profile = () => {
   const [edit, setEdit] = useState(false);
-
- const [value, inputChange] = useState("")
+ const [value, inputChange] = useState("");
+ const [, setState] = 
 
   function toggleEdit(e) {
     setEdit( !edit )
+
   }
+
 
   function save(){
     fetch("/submit", {
@@ -48,7 +50,7 @@ const Profile = () => {
                         href="profPic"
                         alt="profileImg"
                         id="profileImg"
-                    />
+                    />{edit ? <input type="file" id="profImg" onClick={(e)=> this.setState({ selectedFile: event.target.files[0] })}  >: </input>  }
 
                     <div className="form">
                     <div>
