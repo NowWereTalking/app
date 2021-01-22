@@ -35,8 +35,7 @@ const container = useRef(null)
                 <input type="submit" defaultValue="Login" className="btn solid" onClick={ (e) => {
                     e.preventDefault()
                     console.log("this is where we login", username)
-                    setcurrentPage("Profile")
-                    window.location.href="/Profile"
+                    fetch('/')
                 
                 }} />
               </form>
