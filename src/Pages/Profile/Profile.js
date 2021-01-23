@@ -49,21 +49,25 @@ function Profile() {
                 </div>
               </div>
             </div>
-            {/* <div className="social_media">
+            <div className="social_media">
               <ul>
-                <li><a href="#"><i className="fa fa-facebook-f" /></a></li>
-                <li><a href="#"><i className="fa fa-twitter" /></a></li>
-                <li><a href="#"><i className="fa fa-instagram" /></a></li>
+                <li><a href="https://www.facebook.com/"><i className="fa fa-facebook-f" /></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i className="fa fa-twitter" /></a></li>
+                <li><a href="https://www.instagram.com/?hl=en#"><i className="fa fa-instagram" /></a></li>
               </ul>
-            </div> */}
+            </div>
             <div className="buttons">
               <div className="action_btn">
                 <button name="submit" className="action_btn edit" type="submit" value="Edit" onclick="myFunction()">Edit</button>
-                <button name="submit" className="action_btn debate" type="submit" value="Debate" onclick="myFunction2()">Debate Now</button>
+                
+                <a href="https://video-and-chat-application.herokuapp.com/940d670a-8e9c-4bb1-ac8a-515ff21d9467">
+                <button name="submit" className="action_btn debate"  onclick="myFunction2()">Debate Now</button>
+                </a>
+                
               </div>
-            </div>
-          </div>
-        </div>
+             </div> 
+          </div> 
+         </div> 
       );
     }
  
