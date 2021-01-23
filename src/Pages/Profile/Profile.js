@@ -8,8 +8,8 @@ function Profile() {
   
         <div className="wrapper">
           <div className="left">
-          <img src="img/joebiden.jpg" className="image" alt />
-            <h1>Name</h1>
+          <img src="img/rachelgreen.jpg" />
+            <h1>Rachel Green</h1>
           </div>
           <div className="right">
             <div className="info">
