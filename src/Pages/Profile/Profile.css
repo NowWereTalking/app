@@ -1,136 +1,127 @@
-.container{
-    border: solid;
-    border-color: black;
-    width: 600px;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.nameCont{
-    width:100px;
-}
-
-#underline{
-    color: black;
-}
-
-#profCard{
-    border: solid gray 2px;
-    border-radius: 5px;
-    width: 500px;
-    flex: 1;
-}
-
-#topicsCont{
-    display:flex;
-    flex: 1;
-    justify-content: flex-start;
-    top: 0px;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-#topicsCont > #topic1{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    top: 0px;
-    flex: 1;
-    align-items: flex-start;
-    margin:10px;
-    height:50px;
-    width: 200px;
-}
-
-.card-body .editBar{
-    display: flex;
-    justify-content: flex-end;
-    top:0px;
-    padding: 0px;
-    margin: 0px;
+*{
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     width: 100%;
-    height: 55px;
-    border: darkgray solid 2px;
-    color:blue;
-}
-
-#editBtn{
-    display:flex;
-    justify-content: center;
-    padding: 0px;
-    top: -20px;
-    width:60px;
-    height: 20px;
-}
-
-.card-body{
+  }
+  
+  .wrapper .left{
+    width: 100%;
+    background-color: #5995fd;
+    padding: 30px 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .wrapper .left img{
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .wrapper .left p{
+    font-size: 12px;
+  }
+  
+  .wrapper .right{
+    width: 100%;
+    background: #fff;
+    padding: 30px 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .wrapper .right .info,
+  .wrapper .right .projects{
+    margin-bottom: 25px;
+  }
+  
+  .wrapper .right .info h3,
+  .wrapper .right .projects h3{
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #e0e0e0;
+      color: #353c4e;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  
+  .wrapper .right .info_data,
+  .wrapper .right .projects_data{
     display: flex;
-    flex: 1;
-    align-items: center;
-    margin: 20px;
-}
-
-#profileImg{
+    justify-content: space-between;
+  }
+  
+  .wrapper .right .info_data .data,
+  .wrapper .right .projects_data .data{
+    width: 45%;
+  }
+  
+  .wrapper .right .info_data .data h4,
+  .wrapper .right .projects_data .data h4{
+      color: #353c4e;
+      margin-bottom: 5px;
+  }
+  
+  .wrapper .right .info_data .data p,
+  .wrapper .right .projects_data .data p{
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #919aa3;
+  }
+  
+  .wrapper .social_media ul{
     display: flex;
-    border-radius: 50%;
-    border-color: darkgray;
-    border: 5px;
-    height: 200px;
+  }
+  
+  .wrapper .social_media ul li{
+    width: 45px;
+    height: 45px;
+    background-color: #5995fd;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 45px;
+  }
+  
+  .social_media ul li a{
+    color :#fff;
+    font-size: 18px;
+  }
+  .button{
+    background-color: #5995fd;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
     width: 200px;
-    justify-content: center;
+    margin: 0 auto;
+    display: inline;
     
-}
-
-.form{
-    border: solid gray 2px;
-}
-
-#Name{
-    border: hidden;
+  } 
+    .action_btn {
+    background-color: #5995fd;
+    border: none;
     outline: none;
-}
-
-.input{
-    border: hidden;
-    outline: none;
-}
-
-#bio{
-    border-top-color: darkgray;
-    width: 400px;
-    height: 100px;
-    margin: 40px;
-}
-
-#bio::placeholder{
-    position: relative;
-    top: -30px;
-    color: black;
-    opacity: 1;
-}
-
-#Name::placeholder{
-    color: black;
-    opacity: 1;
-    font-size: larger;
-}
-
-#polFav::placeholder{
-    color: black;
-    opacity: 1;
-}
-
-#parTie::placeholder{
-    color: black;
-    opacity: 1;
-}
-
-.widgets{
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    position: relative;
-    margin: 50px;
-}
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+  }
