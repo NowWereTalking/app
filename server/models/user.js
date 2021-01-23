@@ -14,6 +14,7 @@ const UserSchema = new Schema({
     trim: true,
     // required: 'Name is Required',
   },
+
   bio: {
     type: String,
     trim: true,
@@ -30,14 +31,21 @@ const UserSchema = new Schema({
     type: String,
     trim: true,
   },
+
+  email : {
+    type  : String, 
+    required : true 
+  },
   password: {
       type:String,
       trim:true
   }
 });
-UserSchema.methods.validPassword = function validPassword(password){
+UserSchema.methods.verifyPassword = function verifyPassword(password){
    return bcrypt.compareSync(password,this.password) 
 } 
+
+
 
 const User = mongoose.model('User', UserSchema);
 module.exports = User;
