@@ -1,34 +1,54 @@
-// import React, { useState, useEffect, } from 'react';
+import React from 'react';
+import Accordion  from 'react-bootstrap/Accordion';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+
+import Row from 'react-bootstrap/Row';
+
 // import API from "../utils/api"
-// // import { ListGroup } from "./src/Components/ListGroup/index.js";
+// import { ListGroup } from "./src/Components/ListGroup/index.js";
 
-// function User() {
-//   // Setting our component's initial state
-//   const [users, setUsers] = useState([])
-//   const [formObject, setFormObject] = useState({})
 
-//   // Load all logged in users and store them with setUsers
-//   useEffect(() => {
-//     loadUsers()
-//   }, [])
 
-// function loadUsers() {
-//   API.getUsers()
-//     .then(res => 
-//       setUsers(res.data)
-//     )
-//     .catch(err => console.log(err));
-// };
+    // //   <div className="users-container">
+    //     <ListGroup>
+    //       <ListGroup.Item>User1</ListGroup.Item>
+    //       <ListGroup.Item>User2</ListGroup.Item>
+    //       <ListGroup.Item>User3</ListGroup.Item>
+    //     </ListGroup>
+    //   </div>
 
-//     return (
-//       <div className="users-container">
-//         <ListGroup>
-//           <ListGroup.Item>Challenger 1</ListGroup.Item>
-//           <ListGroup.Item>Challenger 2</ListGroup.Item>
-//           <ListGroup.Item>Challenger 3</ListGroup.Item>
-//         </ListGroup>
-//       </div>
-//     );
+    function User() {
+        // alert('Online Users');
+      
+      
+      return(
+           <Row>
+        <Accordion>
+        <Card>
+        
+            <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
+              John Smith
+            </Accordion.Toggle>
+        
+          <Accordion.Collapse eventKey="0">
+            <Card.Body>Hello! I'm available for debate.</Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card>
+          
+            <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
+              Phoebe Buffet
+            </Accordion.Toggle>
+          
+          <Accordion.Collapse eventKey="1">
+            <Card.Body>Hello! Maybe next time.</Card.Body>
+          </Accordion.Collapse>
+        </Card>
+      </Accordion>
+      </Row>
+      );
+    }
   
-//     }
-//   export default User;
+    
+  export default User;

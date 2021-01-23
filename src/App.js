@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 
+
 // components 
 import NavBar from './Components/NavBar/NavBar'
 import Profile from './Pages/Profile/Profile'
