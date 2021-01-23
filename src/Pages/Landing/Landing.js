@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import "../Landing/Landing.css";
 
 
 function Landing() {
@@ -25,11 +26,11 @@ function Landing() {
             <form action="#" className="sign-in-form">
               <h2 className="title">Login</h2>
               <div className="input-field">
-                <i className="fas fa-user" />
+                <i className="fa fa-user" />
                 <input type="text" placeholder="Username" onKeyUp={(e) => { setEmail(e.currentTarget.value) }} />
               </div>
               <div className="input-field">
-                <i className="fas fa-lock" />
+                <i className="fa fa-lock" />
                 <input type="password" placeholder="Password" onKeyDown={ (e) => setPassword(e.target.value)}/>
               </div>
               <input type="submit" defaultValue="Login" className="btn solid" onClick={(e) => {
@@ -63,11 +64,11 @@ function Landing() {
               <h2 className="title">Sign up</h2>
 
               <div className="input-field">
-                <i className="fas fa-envelope" />
+                <i className="fa fa-envelope" />
                 <input type="email" placeholder="Email" onKeyDown={ (e) => setEmail(e.target.value)} />
               </div>
               <div className="input-field">
-                <i className="fas fa-lock" />
+                <i className="fa fa-lock" />
                 <input type="password" placeholder="Password" onKeyDown={ (e) => setPassword(e.target.value)} />
               </div>
               <input type="submit" className="btn" defaultValue="Sign up" onClick={(e) => {
